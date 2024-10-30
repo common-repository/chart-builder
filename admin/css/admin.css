@@ -1,0 +1,16 @@
+#adminmenu a.toplevel_page_chart-builder.wp-menu-open div.wp-menu-image img {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+#adminmenu a.toplevel_page_chart-builder div.wp-menu-name {    
+    transition: .3s ease-in-out;
+}
+#adminmenu a.toplevel_page_chart-builder div.wp-menu-image img {
+    width: 28px;
+    padding: 3px 0 0;
+    transition: .3s ease-in-out;
+}

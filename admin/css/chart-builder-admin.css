@@ -1,0 +1,1107 @@
+
+/* Sliding entrances */
+@-webkit-keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes slideInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.animate__slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideOutUp {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+@keyframes slideOutUp {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+.animate__slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+}
+
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.chart-add-new-bttn {
+    width: 118px;
+    height: 40px;
+    padding: 8px 14px;
+    font-size: 14px;
+}
+.chart-list-table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    padding-bottom: 18px;
+}
+.chart-list-table tbody tr {
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+    /* margin-bottom: 6px!important; */
+}
+
+.chart-list-table thead {
+    background-color: #f1f1f1;
+}
+.chart-list-table thead th {
+    font-weight: normal;
+}
+.chart-list-table tbody {
+    background-color: #fff;
+}
+.chart-list-table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: 50ms;
+}
+/* .chart-list-table tr td {
+    border: 1px solid #ccc;
+} */
+td.column-title {
+    width: 190px;
+    height: 70px;
+    min-height: 70px;
+}
+.chart-list-table td {
+    vertical-align: middle;
+}
+.chart-list-table th:not(.column-title), .chart-list-table td:not(.column-title) {
+    text-align: center;
+}
+
+.chart-list-table .column-cb {
+    text-align: center;
+}
+.chart-list-table .chart-list-table-actions-row {
+    display: none;
+    gap: 5px;
+}
+
+.chart-list-table .chart-list-table-actions-row .chart-list-table-action-link {
+    display: inline-block;
+}
+.column-type>p {
+    margin-bottom: 0;
+}
+
+.ays-chart-shortcode-container {
+    width: fit-content;
+    background-color: #f4f5f7;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px #cacaca;
+    margin: auto;
+}
+.ays-chart-copy-image {
+    width: 32px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebecf0;
+    cursor: pointer;
+}
+.ays-chart-shortcode-container input {
+    border: none!important;
+    background-color: #f4f5f7;
+}
+.ays-chart-shortcode-container input[type=text]:focus {
+    border: none!important;
+    box-shadow: none!important;
+    background-color: #f4f5f7!important;
+}
+
+.link-danger,
+.link-danger * {
+    color: #b32d2e;
+}
+.link-danger:hover,
+.link-danger *:hover {
+    color: #b32d2e;
+}
+
+
+.ays-tab-content {
+    animation: fadeEffect 1s;
+    display: none;
+}
+.ays-tab-content-active {
+    display: block;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.nav-tab-wrapper .nav-tab:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-tab-wrapper.ays-chart-nav-tab-wrapper-chart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row;
+    position:sticky;
+    top:35px;
+}
+
+.nav-tab.ays-chart-nav-tab-chart {
+    width: auto;
+    height: 43px;
+    background-color: #ffffff;
+    border: 0;
+    border-bottom: 2px solid #c4c4c4;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, serif;
+    font-size: 17px;
+    color: #c4c4c4;
+    text-decoration: none solid rgb(196, 196, 196);
+}
+
+.nav-tab.ays-chart-nav-tab-chart.nav-tab-active {
+    color: #008cff;
+    border-bottom-color: #008cff;
+}
+
+.ays-chart-nav-tab-chart.nav-tab-active:focus:active {
+    border-bottom: 2px solid #008cff;
+    color: #008cff;
+}
+
+.ays-chart-nav-tab-chart:focus:active {
+    border-bottom: 2px solid #c4c4c4;
+    color: #c4c4c4;
+}
+
+.tooltip {
+    text-align: left !important;
+    position: absolute !important;
+    z-index: 9999;
+}
+.tooltip > .tooltip-inner {
+    position: relative !important;
+    width: max-content !important;
+    max-width: 300px !important;
+    text-align: justify!important;
+    box-shadow: 0px 0px 10px #fff;
+}
+.tooltip > .arrow {
+    left: calc(50% + 28px) !important;
+}
+.tooltip > .tooltip-inner img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ays_help {
+    position: relative;
+    font-size: 12px;
+    color: dodgerblue !important;
+    cursor: help;
+}
+
+.ays_help_ul {
+    padding-left: 16px;
+    list-style-type: initial;
+}
+
+.swal2-container {
+    z-index: 9999999999!important;
+}
+
+
+div.ays-top-menu-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.ays_menu_left,
+.ays_menu_right {
+    position: absolute;
+    cursor: pointer;
+    font-size: 16px;
+    height: 80%;
+    display: none;
+    align-items: center;
+    bottom: 0;
+    z-index: 3;
+}
+.ays_menu_left {
+    left: -10px;
+    padding-right: 20px;
+    padding-left: 2px;
+}
+.ays_menu_right {
+    right: -10px;
+    padding-left: 20px;
+    padding-right: 2px;
+}
+
+
+blockquote.error_message {
+    color: crimson;
+    font-size: 16px;
+    font-style: italic;
+    border-color: crimson;
+}
+
+blockquote.error_message a {
+    color: brown;
+    font-weight: bold;
+}
+
+blockquote {
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+    font-style: italic;
+    color: #555555;
+    padding: 8px 15px 8px 15px;
+    border-left: 5px solid #78c0a8;
+    line-height: 1.6;
+    position: relative;
+    background: #ededed;
+}
+
+blockquote::before {
+    content: none;
+}
+
+blockquote::after {
+    content: "";
+}
+
+blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.ays-chart-type-info-box .ays-chart-type-info-box-text {
+    font-size: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.ays-chart-type-info-box{
+    margin-top: 10px;
+}
+
+.ays-chart-charts-main-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Manual chart data type start */
+
+.ays-chart-chart-source-data-main{
+    width: 100%;
+    max-width: 100%;
+}
+
+.ays-chart-chart-source-data-main .ays-chart-chart-source-data-input-box{
+    padding: 10px;
+    border-right: 1px solid #B8B8B8;
+}
+
+.ays-chart-chart-source-data-input-number>input {
+    width: 60px;
+    min-width: 60px;
+    max-width: 70px;
+}
+
+.ays-chart-chart-source-data-main .ays-chart-icons-remove-box{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.ays-chart-chart-source-data-main .ays-chart-icons-remove-box .ays-chart-chart-source-data-remove-block {
+    width: 10px;
+}
+
+.ays-chart-chart-source-data-content-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+.ays-chart-chart-source-data-content {
+    /* border-top-left-radius: 8px; */
+    /* border-bottom-left-radius: 8px; */
+    /* border-left-width: 5px; */
+    /* border-left-style: solid; */
+    /* border-right: 1px solid #B8B8B8; */
+    border-left: 1px solid #B8B8B8;
+    width: fit-content;
+}
+
+.ays-chart-chart-source-data-edit-block:nth-of-type(even) {
+    background-color: #fff;
+}
+.ays-chart-chart-source-data-edit-block {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.ays-chart-chart-source-data-edit-block:first-child {
+    border-top: 1px solid #B8B8B8;
+}
+
+.ays-chart-chart-source-data-edit-block:last-child {
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.ays-chart-chart-source-data-main .ays-chart-icons-box img, 
+.ays-chart-chart-source-data-main .ays-chart-icons-box.ays-chart-add-new-row-box,
+.ays-chart-chart-source-data-main .ays-chart-icons-box.ays-chart-add-new-column-box {
+    cursor: pointer;
+}
+
+.ays-chart-icons-box.ays-chart-add-new-row-box,
+.ays-chart-icons-box.ays-chart-add-new-column-box {
+    font-size: 15px;
+    border: 1px solid #B8B8B8;
+    width: fit-content;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.ays-chart-icons-box.ays-chart-add-new-column-box {
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+/* Manual chart data type end */
+
+/*.ays-chart-nav-tab-wrapper.nav-tab-wrapper {*/
+/*    border-bottom: none;*/
+/*    padding-top: 0;*/
+/*    background: #ffffff;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+/*.ays-chart-nav-tab.nav-tab-active, .ays-chart-nav-tab.nav-tab-active:focus, .ays-chart-nav-tab.nav-tab-active:focus:active, .ays-chart-nav-tab.nav-tab-active:hover {*/
+/*    border-bottom: 2px solid #008cff;*/
+/*    background: #ffffff;*/
+/*    color: #008cff;*/
+/*}*/
+/*.ays-chart-nav-tab:focus, .ays-chart-nav-tab:hover {*/
+/*    background: #ffffffbe;*/
+/*}*/
+/*.ays-chart-nav-tab-wrapper>.ays-chart-nav-tab.nav-tab-active {*/
+/*    border-bottom: 2px solid #008cff;*/
+/*    background: #ffffff;*/
+/*    color: #008cff;*/
+/*}*/
+/*.ays-chart-nav-tab-wrapper>.ays-chart-nav-tab {*/
+/*    border: none;*/
+/*    border-bottom: 2px solid #c4c4c4;*/
+/*    margin-left: 0;*/
+/*    padding: 7px 0;*/
+/*    text-align: center;*/
+/*    font-size: 16px;*/
+/*    background: #ffffff;*/
+/*    color: #c4c4c4;*/
+/*    width: 50%;*/
+/*    display: inline-block;*/
+/*}*/
+
+/* Settings tab start */
+
+/*.ays-tab-content#settings {*/
+/*    border-left: 2px solid #008cff;*/
+/*}*/
+.ays-chart-settings-tab-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 0 10px 5px;
+    cursor: pointer;
+}
+.ays-chart-tab-subtitle {
+    margin: 0 0 0 5px;
+    font-size: 13px;
+}
+.ays-chart-options-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-indent: 20px;
+}
+.ays-chart-settings-tab-section-collapsed {
+    display: none;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+/* .ays-chart-options-section:not(:last-child) {
+    margin-bottom: 10px;
+} */
+.ays-chart-options-section {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 20%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+.ays-chart-option-title>label {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.ays-chart-option-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* width: 65%; */
+}
+.ays-chart-option-input>.ays-chart-option-text-input {
+    width: 100%;
+    height: 30px!important;
+    padding: 0px 8px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 20%);
+    margin-top: 0!important;
+}
+#ays-chart-option-title-color {
+    height: 30px;
+    width: 50px;
+    padding: 0;
+    border-radius: 4px;
+    border: none!important;
+}
+.ays-chart-option-input input::placeholder {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.ays-chart-option-desc-box {
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 20%);
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #b3b3b3;
+    text-align: center;
+    line-height: 28px;
+}
+.ays-chart-option-input>span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #008cff;
+}
+
+.ays-chart-range-slider input[type="range"] {
+    appearance: none!important;
+    -webkit-appearance: none!important;
+    margin: 0 6px;
+    width: 100%;
+    height: 2px;
+    background-color: #666666;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #008cff), color-stop(100%, #008cff));
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+.ays-chart-range-slider input[type="range"]::-webkit-slider-thumb {
+    appearance: none!important;
+    -webkit-appearance: none!important;
+    width: 10px;
+    height: 10px;
+    background: #008cff;
+    border: 2px solid #008cff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ays-chart-range-slider {
+    position: relative;
+}
+#ays-chart-range-value {
+    position: absolute;
+    top: -50%;
+    left: 89px;
+    display: none;
+}
+#ays-chart-range-value span{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    color: #008cff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ays-chart-option-input>.ays-chart-option-select-input {
+    width: 100%;
+    height: 30px;
+    line-height: 28px;
+}
+
+.ays-chart-input-align-right {
+    text-align: right;
+}
+.ays-chart-toggle-switch-switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+.ays-chart-toggle-switch-switch .ays-chart-toggle-switch {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.ays-chart-toggle-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.ays-chart-toggle-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.ays-chart-toggle-switch:checked + .ays-chart-toggle-switch-slider {
+    background-color: #008cff;
+}
+.ays-chart-toggle-switch:focus + .ays-chart-toggle-switch-slider {
+    box-shadow: 0 0 1px #008cff;
+}
+.ays-chart-toggle-switch:checked + .ays-chart-toggle-switch-slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+.ays-chart-toggle-switch-slider.ays-chart-toggle-switch-round {
+    border-radius: 34px;
+}
+.ays-chart-toggle-switch-slider.ays-chart-toggle-switch-round:before {
+    border-radius: 50%;
+}
+
+/* Settings tab end */
+
+
+
+/*
+==========================================
+    Settings page styles
+==========================================
+*/
+.ays-settings-wrapper {
+    display: flex;
+}
+.ays-settings-wrapper .nav-tab-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    margin-right: 15px;
+    border-bottom: none;
+}
+.ays-settings-wrapper .nav-tab-wrapper .nav-tab {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 0;
+    float: none !important;
+}
+.ays-settings-wrapper .nav-tab-wrapper .nav-tab:last-child {
+    border-bottom: 1px solid #ccc;
+}
+.ays-settings-wrapper .ays-chart-tabs-wrapper {
+    width: 100%;
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+.ays-settings-wrapper .ays-chart-tabs-wrapper p.ays-subtitle {
+    margin-top: 0;
+}
+
+.go_back{
+    color: black;
+    margin-right: 10px;
+}
+
+.chart_div {
+    /*width: 100%;
+    height: 500px;*/
+    margin: auto;
+}
+
+.ays-tab-content fieldset,
+.ays-settings-wrapper fieldset {
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+.ays-tab-content legend,
+.ays-settings-wrapper legend {
+    width: auto;
+    padding: 0 5px;
+}
+
+.ays-settings-wrapper legend {
+    float: none;
+}
+
+.ays-tab-content legend h5,
+.ays-settings-wrapper legend h5 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.ays_integration_logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle !important;
+}
+
+
+p.ays-subtitle{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p.submit{
+    display: inline;
+    margin-right: 10px;
+}
+
+.button.ays-button {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.w-100 {
+    width: 100px;
+}
+
+.display_none {
+    display: none !important;
+}
+.display_none_not_important {
+    display: none;
+}
+.display_block {
+    display: block !important;
+}
+.shortcode.column-shortcode input {
+    width: 100%;
+}
+
+
+/*
+ * Select2
+ */
+.select2 {
+    display: inline-block!important;
+    z-index: 0 !important;
+}
+#quest_cat_container .select2 {
+    display: block!important;
+}
+
+
+.select2-selection.select2-selection--single{
+    height: 40px!important;
+    border: 1px solid #ddd!important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07)!important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 35px!important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 40px!important;
+}
+
+.select2.select2-container{
+    width: 200px!important;
+}
+
+/*
+ * Select2 multiple
+ */
+
+.select2-selection--multiple {
+    font-size: 16px;
+    min-height: 40px !important;
+    border-radius: 4px;
+    margin-top: -5px;
+    min-width: 150px;
+    border-color: #ddd;
+}
+
+.select2.select2-container.select2-container--default.select2-container--below.select2-container--open .select2-selection--multiple {
+    border-color: #5b9dd9;
+    box-shadow: 0 0 2px rgba(30, 140, 190, .8);
+    outline: 2px solid transparent;
+}
+
+.select2.select2-container {
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 1px !important;
+    padding: 0 5px !important;
+    margin-bottom: 8px !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.select2-selection--single {
+    height: 100% !important;
+}
+.select2-selection__rendered{
+    word-wrap: break-word !important;
+    text-overflow: inherit !important;
+    white-space: normal !important;
+}
+/*
+ * Select2 multiple
+ */
+
+.select2-selection--multiple {
+    font-size: 16px;
+    min-height: 40px !important;
+    border-radius: 4px;
+    margin-top: -5px;
+    min-width: 150px;
+    border-color: #ddd;
+}
+
+.select2.select2-container.select2-container--default.select2-container--below.select2-container--open .select2-selection--multiple {
+    border-color: #5b9dd9;
+    box-shadow: 0 0 2px rgba(30, 140, 190, .8);
+    outline: 2px solid transparent;
+}
+
+.select2.select2-container {
+    width: 100%!important;
+}
+.ays_quiz_stat_select_div .select2.select2-container {
+    width: 200px!important;
+}
+.select2-container--default .select2-selection--multiple {
+    min-height: 50px !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 4px!important;
+    padding: 5px!important;
+    margin-bottom:  0!important;
+
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    height: auto;
+    overflow: visible;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    background: transparent;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+}
+
+
+/**
+ * Accordion options styles
+ */
+
+fieldset.ays-accordion-options-container {
+    border: none;
+    padding: 0;
+    border-left: 2px solid #008cff;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+
+fieldset.ays-accordion-options-container legend.ays-accordion-options-header {
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-left: 36px;
+}
+
+fieldset.ays-accordion-options-container legend.ays-accordion-options-header svg.ays-accordion-arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+fieldset.ays-accordion-options-container legend.ays-accordion-options-header span {
+/*    font-family: Arial;*/
+    font-size: 13px;
+    color: #595959;
+    text-decoration: none solid rgb(89, 89, 89);
+    line-height: 1;
+}
+
+fieldset.ays-accordion-options-container div.ays-accordion-options-content {
+    width: 100%;
+    transition: all .25s ease;
+    /* max-height: 500px; */
+}
+
+fieldset.ays-accordion-options-container div.ays-accordion-data-main-wrap {
+    padding: 10px 20px 20px 36px;
+}
+
+fieldset.ays-accordion-options-container[data-collapsed="true"] div.ays-accordion-options-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+fieldset.ays-accordion-options-container[data-collapsed="false"] div.ays-accordion-options-content {
+    /*height: 100%;*/
+}
+
+.ays-accordion-arrow {
+    transition: .3s ease;
+}
+.ays-accordion-arrow-down {
+    transform: rotate(90deg);
+}
+
+/*
+ * Chosen selects
+ */
+.ays-chart-chart-source-data-main select {
+    height: 55px;
+    max-height: 55px;
+    margin: 0;
+    padding: 16px 20px;
+    color: #555;
+    box-shadow: none;
+}
+
+.ays-chart-chart-source-data-main select:focus,
+.ays-chart-chart-source-data-main .chosen-container-active .chosen-choices,
+.ays-chart-chart-source-data-main .chosen-container .chosen-drop,
+.ays-chart-chart-source-data-main input {
+    outline: none;
+    box-shadow: none;
+}
+
+.ays-chart-chart-source-data-main .chosen-container-active .chosen-choices,
+.ays-chart-chart-source-data-main .chosen-container-active .chosen-results {
+    border-color: #5b9dd9 !important;
+}
+
+.ays-chart-chart-source-data-main .chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    color: #555;
+}
+
+.ays-chart-chart-source-data-main .chosen-container .chosen-drop {
+    display: none;
+    left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+.ays-chart-chart-source-data-main .chosen-container.chosen-container-active .chosen-drop {
+    display: block;
+}
+
+.ays-chart-chart-source-data-main .chosen-container .chosen-drop .chosen-results {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.ays-chart-chart-source-data-main .chosen-container .chosen-results li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.ays-chart-chart-source-data-main .chosen-container .chosen-results li:last-child {
+    border-bottom: none;
+}
+
+.ays-chart-chart-source-data-main .chosen-container .chosen-results li.highlighted {
+    background: #0085ba;
+}
+
+#filter-wizard-rules {
+    display: table;
+    width: 100%;
+}
+
+#visualizer-post-types {
+    display: table-cell;
+    width: 200px;
+}
+
+.ays-chart-chart-source-data-main .chosen-container {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 100% !important;
+    padding-left: 20px;
+}
+
+.ays-chart-chart-source-data-main .chosen-container-multi .chosen-choices {
+    height: 55px !important;
+    max-height: 55px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    background-image: none;
+}
+
+.ays-chart-chart-source-data-main .chosen-container-multi .chosen-choices li.search-choice {
+    height: 30px;
+    margin: 0 10px 0 0;
+    padding: 7px 25px 10px 10px;
+    border: none;
+    color: #fff;
+    background: #0085ba;
+    box-shadow: none;
+    line-height: 1;
+}
+
+.ays-chart-chart-source-data-main .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    display: inline-block;
+    top: 6px;
+    right: 4px;
+    width: 18px;
+    height: 18px;
+    color: #9acadd;
+    font-family: dashicons;
+    font-size: 18px;
+}
+
+.ays-chart-chart-source-data-main .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+    color: #fff;
+}
+
+.ays-chart-chart-source-data-main .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+    content: "\f335";
+}
+
+.ays-chart-chart-source-data-main .chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    height: 29px;
+}
+
+#filter-wizard-details {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+#filter-wizard table.filter-wizard {
+    width: 100%;
+}
+
+#filter-wizard table.filter-wizard tr.filter-wizard-new td {
+    padding-top: 20px;
+}
+
+#filter-wizard-details input,
+#filter-wizard-details select {
+    height: 35px;
+    padding: 0 15px;
+    line-height: 1;
+}
+
+#filter-wizard-details {
+    display: none;
+}
+
+#visualizer_post_fields_chosen.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    background: none;
+}
+
+#vz-no-fields {
+    width: 100%;
+    margin-top: 50px;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+svg > g > g.google-visualization-tooltip {
+    pointer-events: none
+}
